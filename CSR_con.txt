@@ -1,0 +1,6 @@
+
+
+Interface loopback 7
+IP address 7.7.7.7 255.255.255.255
+No shut
+

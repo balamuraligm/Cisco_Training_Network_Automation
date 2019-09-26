@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/local/bin/python3
 
 print ('hello murali')
 
@@ -10,3 +10,4 @@ zz = [z,x,y]
 print(z)
 print(zz)
 print(x,y)
+
