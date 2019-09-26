@@ -1,0 +1,27 @@
+---
+ - hosts: all
+   tasks:
+    - name: i want to run command
+      ios_command:
+       commands: 
+        - show clock
+        - show ip interface brief
+        - show version
+   
+    - name: i want to run another command
+      ios_command:
+       commands: 
+        - show clock
+      register: output
+
+    - name: showing normal output
+      debug:
+       msg: "Hello Murali, the output of above command is {{output}}" 
+#       - var: output
+
+    - name: Ping to Google
+      ios_ping:
+       dest: 8.8.8.8
+      tags:
+       - anything
+
